@@ -17,7 +17,7 @@ export class AppComponent {
       achievements: "Conquistas",
     },
     profileInfo: {
-      img: "#",
+      img: "../assets/profile-picture.jpeg",
       name: "Krebinho",
       About: {
         title: "Sobre mim",
