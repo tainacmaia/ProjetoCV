@@ -9,6 +9,7 @@ import { AchievementComponent } from './components/achievement/achievement.compo
 import { ResumeComponent } from './components/resume/resume.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SkillComponent } from './components/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AchievementComponent,
     ResumeComponent,
     ProfileComponent,
-    NavbarComponent
+    NavbarComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule
