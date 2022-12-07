@@ -1,10 +1,10 @@
 <main>
   <section class="profile">
-    <app-navbar></app-navbar>
-    <app-profile></app-profile>
+    <app-profile [dataProfile]="data.profileInfo"></app-profile>
   </section>
+
   <section class="resume">
-    <!-- tralala do mat aprovar-->
+    <app-navbar [navData]="data.nav"></app-navbar>
     <app-resume></app-resume>
   </section>
 </main>

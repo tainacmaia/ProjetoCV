@@ -1,0 +1,22 @@
+main {
+  background: rgba(255, 252, 245, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile {
+  background: rgba(202, 175, 154, 0.17);
+  padding: 0 1.5rem;
+  height: 80vh;
+  margin-right: 3rem;
+  border-radius: 35px 0;
+}
+
+.resume {
+  background: rgba(202, 175, 154, 0.63);
+  width: 70vw;
+  height: 80vh;
+  border-radius: 0 35px 35px 35px;
+}

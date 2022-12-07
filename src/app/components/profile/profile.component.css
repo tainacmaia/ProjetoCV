@@ -1,0 +1,21 @@
+.profile-owner img {
+  margin-top: 1.5rem;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 35px 0;
+}
+
+.profile-owner h1 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.profile-dropdown h3 {
+  font-size: 1.2rem;
+}
+
+.profile-dropdown p {
+  font-size: 1rem;
+}

@@ -1,6 +1,15 @@
-<p>profile works!</p>
-<img src="" alt="">
-<h1>Nome da Pessoa Longo</h1>
-<app-profile-info></app-profile-info>
-<app-profile-info></app-profile-info>
-<app-profile-info></app-profile-info>
+<div class="profile-owner">
+  <img src="{{dataProfile.img}}" alt="">
+  <h1>{{dataProfile.name}}</h1>
+</div>
+
+<div class="profile-dropdown">
+    <h3>{{dataProfile.About.title}}</h3>
+    <p>{{dataProfile.About.text}}</p>
+
+    <h3>{{dataProfile.Contact.title}}</h3>
+    <p>{{dataProfile.Contact.text}}</p>
+
+    <h3>{{dataProfile.Portfolio.title}}</h3>
+    <p>{{dataProfile.Portfolio.text}}</p>
+</div>
