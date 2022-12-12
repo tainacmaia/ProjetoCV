@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
-  @Input() public dataCard!: AppData 
+  @Input() public appData!: AppData
 }
