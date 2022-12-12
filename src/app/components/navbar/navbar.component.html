@@ -1,8 +1,7 @@
 <ul>
-  <li>{{navData.skills}}</li>
+  <li (click)="skillActive()"><input type="hidden" [(ngModel)]="activeCard">{{navData.skills}}</li>
   <!-- <li (click) = "">{{navData.skills}}</li> -->
-  <li>{{navData.experience}}</li>
-  <li>{{navData.education}}</li>
-  <li>{{navData.achievements}}</li>
-  <!-- <li><app-button></app-button></li> -->
+  <li (click)="experienceActive()"><input type="hidden" [(ngModel)]="activeCard">{{navData.experience}}</li>
+  <li (click)="educationActive()"><input type="hidden" [(ngModel)]="activeCard">{{navData.education}}</li>
+  <li (click)="achievementsActive()"><input type="hidden" [(ngModel)]="activeCard">{{navData.achievements}}</li>
 </ul>

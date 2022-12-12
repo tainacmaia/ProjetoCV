@@ -10,6 +10,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SkillComponent } from './components/skill/skill.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,11 @@ import { SkillComponent } from './components/skill/skill.component';
     ResumeComponent,
     ProfileComponent,
     NavbarComponent,
-    SkillComponent
+    SkillComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
