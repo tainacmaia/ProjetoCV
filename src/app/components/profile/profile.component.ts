@@ -8,5 +8,4 @@ import { ProfileInfoSection } from 'src/app/models/profile-info-section-data.mod
 })
 export class ProfileComponent {
   @Input() public dataProfile!: ProfileInfoSection;
-
 }
