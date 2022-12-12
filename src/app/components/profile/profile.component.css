@@ -51,4 +51,5 @@
 
 .accordion-button:not(.collapsed)::after {
   background-image: url(../../../assets/less.png);
+  transform: scale(1.2, 1.2) rotate(.5turn);
 }
