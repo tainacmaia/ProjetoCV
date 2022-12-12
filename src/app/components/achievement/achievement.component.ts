@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AchievementData } from './../../models/achievement-data.model';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-achievement',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./achievement.component.css']
 })
 export class AchievementComponent {
-
+  @Input() public achievementsData!: AchievementData;
 }

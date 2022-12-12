@@ -10,12 +10,6 @@ export class AppComponent {
   title = 'ProjetoCV';
 
   public data: AppData = {
-    nav: {
-      skills: "Skills",
-      experience: "Experiências",
-      education: "Formação",
-      achievements: "Conquistas",
-    },
     profileInfo: {
       img: "../assets/profile-picture.jpeg",
       name: "Krebinho",
@@ -31,7 +25,30 @@ export class AppComponent {
         title: "Portfólio",
         text: "Aqui ta os treco que eu fiz"
       }
+    },
+    nav: {
+      skills: "Skills",
+      experience: "Experiências",
+      education: "Formação",
+      achievements: "Conquistas",
+    },
+    card: {
+      skills: {
+        value: "skills",
+        isActive: true
+      },
+      experience: {
+        value: "experience",
+        isActive: false
+      },
+      education: {
+        value: "education",
+        isActive: false
+      },
+      achievements: {
+        value: "achievements",
+        isActive: false
+      }
     }
   }
-
 }
