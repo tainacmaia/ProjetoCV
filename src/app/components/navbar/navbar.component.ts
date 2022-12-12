@@ -7,5 +7,5 @@ import { Navbar } from 'src/app/models/navbar-data.mode';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-@Input() public navData!: Navbar;
+  @Input() public navData!: Navbar;
 }
