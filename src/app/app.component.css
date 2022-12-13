@@ -14,9 +14,7 @@ main {
   border-radius: 35px 0;
 }
 
-.resume {
-  background: rgba(202, 175, 154, 0.63);
+.containerResume {
   width: 70vw;
   height: 80vh;
-  border-radius: 0 35px 35px 35px;
 }
