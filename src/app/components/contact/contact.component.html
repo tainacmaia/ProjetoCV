@@ -40,9 +40,11 @@
     ></textarea>
   </div>
 
-  <button
-    class="buttonSubmit"
-    [disabled]="btnDisabled"
-    (click)="submitForm()"
-  >Enviar</button>
+  <div class="button-container">
+    <button
+      class="buttonSubmit"
+      [disabled]="btnDisabled"
+      (click)="submitForm()"
+    >Enviar</button>
+  </div>
 </form>

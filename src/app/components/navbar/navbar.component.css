@@ -10,7 +10,6 @@ ul button {
   list-style-type: none;
   color: #6FB3B8;
   background: #E3E3E3;
-  /* padding: 0.5rem 4rem; */
   padding: 1vh 4vw;
   border-radius: 1.5rem 1.5rem 0 0;
   border: none;
@@ -21,7 +20,6 @@ ul button:focus {
   list-style-type: none;
   color: #fff;
   background: #decbbb;
-  /* padding: 0.5rem 4rem; */
   padding: 1vh 4vw;
   border-radius: 1.4rem 1.5rem 0 0;
   font-weight: bold;
