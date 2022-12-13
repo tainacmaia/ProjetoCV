@@ -1,3 +1,4 @@
+import { Languages } from './models/languages-data.model';
 import { AppData } from './models/app-data.model';
 import { Component } from '@angular/core';
 
@@ -54,6 +55,47 @@ export class AppComponent {
             image: "../assets/less.png",
             name: "foda"
           },
+        ],
+        language: [
+          {
+            languageName: "Inglês",
+            level1: {
+              level: "is-complete",
+              nameLevel: "Iniciante",
+            },
+            level2: {
+              level: "is-complete",
+              nameLevel: "Intermediário",
+            },
+            level3: {
+              level: "is-active",
+              nameLevel: "Avançado",
+            },
+            level4: {
+              level: "",
+              nameLevel: "Fluente",
+            },
+          },
+          {
+            languageName: "Árabe",
+            level1: {
+              level: "is-complete",
+              nameLevel: "Iniciante",
+            },
+            level2: {
+              level: "is-complete",
+              nameLevel: "Intermediário",
+            },
+            level3: {
+              level: "is-complete",
+              nameLevel: "Avançado",
+            },
+            level4: {
+              level: "is-active",
+              nameLevel: "Fluente",
+            },
+          },
+
         ],
         isActive: true,
       },

@@ -17,22 +17,24 @@
 
 <section id="languages">
     <h3>Idiomas</h3>
-    <div class="languages">
-        <h4>Inglês</h4>
-        <ol class="steps">
-            <li class="step is-complete" data-step="1">
-                Básico
-            </li>
-            <li class="step is-complete" data-step="2">
-                Intermediário
-            </li>
-            <li class="step is-active" data-step="3">
-                Avançado
-            </li>
-            <li class="step" data-step="4">
-                Fluente
-            </li>
-        </ol>
+    <div class="languages" *ngFor="let language of skillData.language">
+        <h4>{{language.languageName}}</h4>
+        <div class="languages-levels">
+          <ol class="steps">
+              <li class="step {{language.level1.level}}" data-step="1">
+                  {{language.level1.nameLevel}}
+              </li>
+              <li class="step {{language.level2.level}}" data-step="2">
+                  {{language.level2.nameLevel}}
+              </li>
+              <li class="step {{language.level3.level}}" data-step="3">
+                  {{language.level3.nameLevel}}
+              </li>
+              <li class="step {{language.level4.level}}" data-step="4">
+                  {{language.level4.nameLevel}}
+              </li>
+          </ol>
+        </div>
     </div>
 
 </section>
