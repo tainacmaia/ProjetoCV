@@ -47,6 +47,9 @@ export class AppComponent {
       achievements: {
         value: "achievements",
         isActive: false
+      },
+      contact: {
+        isActive: false
       }
     }
   }
