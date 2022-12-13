@@ -33,8 +33,29 @@ export class AppComponent {
     },
     card: {
       skills: {
-        value: "skills",
-        isActive: true
+        technologies: [
+          {
+            classe: 'progress-45',
+            image: "../assets/more2.png",
+            name: "lindo"
+          },
+          {
+            classe: 'progress-75',
+            image: "../assets/less.png",
+            name: "esperto"
+          },
+          {
+            classe: 'progress-90',
+            image: "../assets/less.png",
+            name: "gato"
+          },
+          {
+            classe: 'progress-95',
+            image: "../assets/less.png",
+            name: "foda"
+          },
+        ],
+        isActive: true,
       },
       experience: {
         value: "experience",

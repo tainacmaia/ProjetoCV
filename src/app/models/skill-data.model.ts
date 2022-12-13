@@ -1,4 +1,8 @@
+// import { Languages } from "./languages-data.model";
+import { Technologies } from "./technologies-data.model";
+
 export interface SkillData {
-    value: string
+    technologies: Technologies[];
     isActive: boolean;
+    // language: Languages[];
 }

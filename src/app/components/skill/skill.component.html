@@ -1,32 +1,16 @@
 <section id="technologies">
     <h3>Tecnologias</h3>
-    <div class="set-size charts-container">
-        <div class="pie-wrapper progress-45 style-2">
-            <span class="label">{{skillData.value}}<span class="smaller"></span></span>
-            <div class="pie">
-                <div class="left-side half-circle"></div>
-                <div class="right-side half-circle"></div>
-            </div>
-            <div class="shadow"></div>
-        </div>
-    
-        <div class="pie-wrapper progress-75 style-2">
-            <span class="label">{{skillData.value}}<span class="smaller"></span></span>
-            <div class="pie">
-                <div class="left-side half-circle"></div>
-                <div class="right-side half-circle"></div>
-            </div>
-            <div class="shadow"></div>
-        </div>
-    
-        <div class="pie-wrapper progress-95 style-2">
-            <span class="label">{{skillData.value}}<span class="smaller"></span></span>
-            <div class="pie">
-                <div class="left-side half-circle"></div>
-                <div class="right-side half-circle"></div>
-            </div>
-            <div class="shadow"></div>
-        </div>
+    <div class="containerSkills">
+      <div class="set-size charts-container" *ngFor="let skill of skillData.technologies">
+          <div class="pie-wrapper style-2 {{skill.classe}}">
+              <span class="label">{{skill.name}}<span class="smaller"></span></span>
+              <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+              </div>
+              <div class="shadow"></div>
+          </div>
+      </div>
     </div>
 </section>
 
