@@ -1,0 +1,50 @@
+<form [formGroup]="formContact" class="formContact">
+  <div class="formElement">
+    <label for="exampleFormControlInput1">Nome</label>
+    <input
+        type="text"
+        class="form-input"
+        formControlName="name"
+        placeholder="Digite seu Nome"
+    >
+  </div>
+
+  <div class="formElement">
+    <label>Email</label>
+    <input
+        type="email"
+        class="form-input"
+        formControlName="email"
+        placeholder="teste@dominio.com"
+    >
+  </div>
+
+  <div class="formElement">
+    <label>Telefone</label>
+    <input
+        type="tel"
+        class="form-input"
+        formControlName="phone"
+        placeholder="(00) 0000-0000"
+    >
+  </div>
+
+  <div class="formElement">
+    <label>Mensagem</label>
+    <textarea
+        type="text"
+        rows="2"
+        class="form-input"
+        formControlName="message"
+        placeholder="Escreva aqui sua mensagem"
+    ></textarea>
+  </div>
+
+  <div class="button-container">
+    <button
+      class="buttonSubmit"
+      [disabled]="btnDisabled"
+      (click)="submitForm()"
+    >Enviar</button>
+  </div>
+</form>

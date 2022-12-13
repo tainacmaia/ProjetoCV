@@ -10,7 +10,8 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SkillComponent } from './components/skill/skill.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,12 @@ import { FormsModule } from '@angular/forms';
     ProfileComponent,
     NavbarComponent,
     SkillComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

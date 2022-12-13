@@ -11,7 +11,7 @@ export class AppComponent {
   public data: AppData = {
     profileInfo: {
       img: "../assets/profile-picture.jpeg",
-      name: "Krebinho",
+      name: "Wandinha",
       About: {
         title: "Sobre mim",
         text: "Eu sou lindo(a) e esperto(a)"
@@ -46,6 +46,9 @@ export class AppComponent {
       },
       achievements: {
         value: "achievements",
+        isActive: false
+      },
+      contact: {
         isActive: false
       }
     }
