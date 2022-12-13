@@ -14,33 +14,16 @@ export class NavbarComponent {
   @Input() activeCard: any;
   @Output() activeCardChange = new EventEmitter();
 
-  // @Output() public cardActive!: AppComponent;
-
-  public skillActive(): void {
-    this.activeCard.skills.isActive = true
-    this.activeCard.experience.isActive = false
-    this.activeCard.achievements.isActive = false
-    this.activeCard.education.isActive = false
-  }
-
-  public achievementsActive(): void {
-    this.activeCard.skills.isActive = false
-    this.activeCard.experience.isActive = false
-    this.activeCard.achievements.isActive = true
-    this.activeCard.education.isActive = false
-  }
-
-  public experienceActive(): void {
-    this.activeCard.skills.isActive = false
-    this.activeCard.experience.isActive = true
-    this.activeCard.achievements.isActive = false
-    this.activeCard.education.isActive = false
-  }
-
-  public educationActive(): void {
-    this.activeCard.skills.isActive = false
-    this.activeCard.experience.isActive = false
-    this.activeCard.achievements.isActive = false
-    this.activeCard.education.isActive = true
+  public activateCard(position: number): void {
+    let trueValue = Object.keys(this.activeCard)[position]
+    for(let i = 0; i < Object.keys(this.activeCard).length; i++){
+      let value = Object.keys(this.activeCard)[i];
+      if (Object.keys(this.activeCard)[i] == trueValue){
+        eval(`this.activeCard.${value}.isActive = true`)
+      }
+      else {
+        eval(`this.activeCard.${value}.isActive = false`)
+      }
+    }
   }
 }
