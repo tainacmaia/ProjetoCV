@@ -2,7 +2,7 @@
     background: rgba(202, 175, 154, 0.63);
     height: 75vh;
     border-radius: 0px 35px 35px 35px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
 ::-webkit-scrollbar {
