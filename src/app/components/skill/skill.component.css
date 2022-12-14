@@ -211,15 +211,18 @@
 	 width: 100%;
 	 color: #929292;
 	 height: 4rem;
+   width: 35rem;
 }
 
 .languages{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 5rem;
-    margin-top: 5%;
+    margin: 5%;
     padding: 0 0 0 4rem;
 }
+
+
 
  .steps > .step {
 	 position: relative;
@@ -306,6 +309,7 @@
 #technologies h3, #languages h3  {
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 2vh;
 }
 
 
