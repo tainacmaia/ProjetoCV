@@ -116,4 +116,11 @@ export class AppComponent {
       }
     }
   }
+
+  public navButtonFocus(e: any) {
+    if(e.target.className != 'navButton')
+    {
+      e.preventDefault();
+    }
+  }
 }
