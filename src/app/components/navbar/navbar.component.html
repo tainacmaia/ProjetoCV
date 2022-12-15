@@ -1,9 +1,9 @@
 <ul>
-  <button class="navButton" (click)="activateCard(0)" autofocus><input type="hidden" [(ngModel)]="activeCard">{{navData.skills}}</button>
-  <button class="navButton" (click)="activateCard(1)"><input type="hidden" [(ngModel)]="activeCard">{{navData.experience}}</button>
-  <button class="navButton" (click)="activateCard(2)"><input type="hidden" [(ngModel)]="activeCard">{{navData.education}}</button>
-  <button class="navButton" (click)="activateCard(3)"><input type="hidden" [(ngModel)]="activeCard">{{navData.achievements}}</button>
-  <button class="navButton" (click)="activateCard(4)"><input type="hidden" [(ngModel)]="activeCard">Contato</button>
+  <button [ngClass]="{'btn-active': activeCard.skills.isActive, 'btn-inactive':!activeCard.skills.isActive}" class="navButton" (click)="activateCard(0)" autofocus><input type="hidden" [(ngModel)]="activeCard">{{navData.skills}}</button>
+  <button [ngClass]="{'btn-active': activeCard.experience.isActive, 'btn-inactive':!activeCard.experience.isActive}" class="navButton" (click)="activateCard(1)"><input type="hidden" [(ngModel)]="activeCard">{{navData.experience}}</button>
+  <button [ngClass]="{'btn-active': activeCard.education.isActive, 'btn-inactive':!activeCard.education.isActive}" class="navButton" (click)="activateCard(2)"><input type="hidden" [(ngModel)]="activeCard">{{navData.education}}</button>
+  <button [ngClass]="{'btn-active': activeCard.achievements.isActive, 'btn-inactive':!activeCard.achievements.isActive}" class="navButton" (click)="activateCard(3)"><input type="hidden" [(ngModel)]="activeCard">{{navData.achievements}}</button>
+  <button [ngClass]="{'btn-active': activeCard.contact.isActive, 'btn-inactive':!activeCard.contact.isActive}" class="navButton" (click)="activateCard(4)"><input type="hidden" [(ngModel)]="activeCard">Contato</button>
 </ul>
 
 

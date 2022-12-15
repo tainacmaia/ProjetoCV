@@ -176,12 +176,12 @@ export class AppComponent {
     }
   }
 
-  public navButtonFocus(e: any) {
-    if(e.target.className != 'navButton')
-    {
-      e.preventDefault();
-    }
-  }
+  // public navButtonFocus(e: any) {
+  //   if(e.target.className != 'navButton')
+  //   {
+  //     e.preventDefault();
+  //   }
+  // }
 
   public toggleDarkTheme(): void {
     const main = document.getElementsByTagName("main")[0];
