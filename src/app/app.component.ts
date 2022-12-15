@@ -123,4 +123,13 @@ export class AppComponent {
       e.preventDefault();
     }
   }
+
+  public toggleDarkTheme(): void {
+    const main = document.getElementsByTagName("main")[0];
+    main.classList.toggle('dark-theme');
+    // var sheet = document.styleSheets[0];
+    // sheet.insertRule(":root{--blue:#4444FF}");
+    // const main = document.getElementsByTagName("main")[0];
+    // main.style.setProperty('--bg-color', '#4444ff');
+  }
 }

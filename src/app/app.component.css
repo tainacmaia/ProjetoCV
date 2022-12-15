@@ -1,5 +1,7 @@
+@import "../styles.css";
+
 main {
-  background: rgba(255, 252, 245, 1);
+  /* --bg-color: rgba(255, 252, 245, 1); */
   display: flex;
   justify-content: center;
   align-items: center;
