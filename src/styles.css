@@ -3,8 +3,10 @@
   --bg-color: rgba(255, 252, 245, 1);
   --bg-card: rgba(202, 175, 154, 0.63);
   --bg-navButton: rgb(227, 227, 227);
-  --txt-navButton: rgb(111, 179, 184);
   --bg-profile: rgb(246, 240, 230);
+  --bg-input-form: #FAF3E7;
+  --bg-button-theme-submit: rgb(213, 177, 104);
+  --txt-navButton: rgb(111, 179, 184);
   --txt-color: rgb(0, 0, 0);
   --filter: brightness(0);
 }
@@ -13,8 +15,10 @@
   --bg-color: rgb(36, 36, 36);
   --bg-card: rgb(174, 137, 107, 0.63);
   --bg-navButton: rgb(121, 191, 206);
-  --txt-navButton: rgb(255, 255, 255);
   --bg-profile: rgb(64, 60, 56);
+  --bg-input-form: #b5aa95;
+  --bg-button-theme-submit: rgb(60, 58, 75);
+  --txt-navButton: rgb(255, 255, 255);
   --txt-color: rgb(255, 255, 255);
   --filter: brightness(0) invert(1);
 }

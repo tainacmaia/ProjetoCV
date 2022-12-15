@@ -1,5 +1,9 @@
 <div class="experience" *ngFor="let experience of experienceData.array">
-    <h3>{{experience.value.title}}</h3>
+    <div class="experience-time">
+      <h3>{{experience.value.title}}</h3>
+      <h3>|</h3>
+      <h3>dezembro de 2022 - atual</h3>
+    </div>
     <p>{{experience.value.content}}</p>
 </div>
 
