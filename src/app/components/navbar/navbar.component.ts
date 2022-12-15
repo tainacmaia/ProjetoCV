@@ -16,10 +16,13 @@ export class NavbarComponent {
 
   public activateCard(position: number): void {
     let trueValue = Object.keys(this.activeCard)[position]
+    // let styleButton = document.getElementsByClassName("navButton")[position]
+    // console.log(styleButton)
     for(let i = 0; i < Object.keys(this.activeCard).length; i++){
       let value = Object.keys(this.activeCard)[i];
       if (Object.keys(this.activeCard)[i] == trueValue){
         eval(`this.activeCard.${value}.isActive = true`)
+        // styleButton
       }
       else {
         eval(`this.activeCard.${value}.isActive = false`)
