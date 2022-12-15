@@ -100,15 +100,74 @@ export class AppComponent {
         isActive: true,
       },
       experience: {
-        value: "experience",
+        array: [
+          {
+            value: {
+              title: "Experience",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          },
+          {
+            value: {
+              title: "Experience",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          },
+          {
+            value: {
+              title: "Experience",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          }
+        ],
         isActive: false
       },
+
       education: {
-        value: "education",
+        array: [
+          {
+            value: {
+              title: "Education",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          },
+          {
+            value: {
+              title: "Education",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          },
+          {
+            value: {
+              title: "Education",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          }
+        ],
         isActive: false
       },
+
       achievements: {
-        value: "achievements",
+        array: [
+          {
+            value: {
+              title: "Achievements",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          },
+          {
+            value: {
+              title: "Achievements",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          },
+          {
+            value: {
+              title: "Achievements",
+              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+          }
+        ],
         isActive: false
       },
       contact: {

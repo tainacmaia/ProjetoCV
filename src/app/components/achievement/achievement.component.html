@@ -1,1 +1,4 @@
-<p>{{achievementsData.value}}</p>
+<div class="achievements" *ngFor="let achievements of achievementsData.array">
+    <h3>{{achievements.value.title}}</h3>
+    <p>{{achievements.value.content}}</p>
+</div>

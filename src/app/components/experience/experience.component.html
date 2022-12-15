@@ -1,1 +1,5 @@
-<p>{{experienceData.value!}}</p>
+<div class="experience" *ngFor="let experience of experienceData.array">
+    <h3>{{experience.value.title}}</h3>
+    <p>{{experience.value.content}}</p>
+</div>
+

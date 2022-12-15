@@ -1,4 +1,6 @@
+import { ArrayTextStructure } from "./array-text-structure.model";
+
 export interface EducationData {
-    value: string
+    array: ArrayTextStructure[];
     isActive: boolean;
 }
