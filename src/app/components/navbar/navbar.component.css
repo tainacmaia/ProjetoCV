@@ -1,3 +1,5 @@
+@import "../../../styles.css";
+
 ul {
   display: flex;
   /* justify-content: space-evenly; */
@@ -8,8 +10,8 @@ ul {
 ul button {
   margin-right: 0.8rem;
   list-style-type: none;
-  color: #6FB3B8;
-  /* background: #E3E3E3; */
+  color: var(--txt-navButton);
+  background: var(--bg-navButton);
   padding: 1vh 4vw;
   border-radius: 1.5rem 1.5rem 0 0;
   border: none;
@@ -19,7 +21,7 @@ ul button:focus {
   outline: 0;
   list-style-type: none;
   color: #fff;
-  /* background: #decbbb; */
+  background: var(--bg-card);
   padding: 1vh 4vw;
   border-radius: 1.4rem 1.5rem 0 0;
   font-weight: bold;

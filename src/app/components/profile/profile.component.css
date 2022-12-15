@@ -1,3 +1,5 @@
+@import "../../../styles.css";
+
 .profile-owner img {
   margin-top: 1.5rem;
   width: 250px;
@@ -10,6 +12,7 @@
 .profile-owner h1 {
   font-size: 1.6rem;
   text-align: center;
+  color: var(--txt-color);
 }
 
 /* accordion */
@@ -17,26 +20,26 @@
 .accordion-button {
   padding: .3rem;
   border: none;
-
 }
 
 .accordion-body {
   padding: .3rem;
-  background: #f6f0e6;
+  background: var(--bg-profile);
   border: none;
-
+  color: var(--txt-color);
 }
 
 .accordion-item h2 button {
   font-size: 1.2rem;
   font-weight: bold;
-  background: #f6f0e6;
+  background: var(--bg-profile);
   border: none;
+  color: var(--txt-color);
 }
 
 .accordion-button:not(.collapsed) {
-  color: black;
-  background-color: var(--bs-accordion-active-bg);
+  /* color: black; */
+  /* background-color: var(--bs-accordion-active-bg); */
   box-shadow: none;
   /* box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 rgb(202, 175, 154); */
 }
@@ -53,4 +56,8 @@
 .accordion-button:not(.collapsed)::after {
   background-image: url(../../../assets/less.png);
   transform: scale(1.2, 1.2) rotate(.5turn);
+}
+
+button.accordion-button::after{
+  filter: var(--filter);
 }
