@@ -1,4 +1,6 @@
+import { TextStructure } from "./text-structure.model";
+
 export interface AchievementData {
-    value: string
+    value: TextStructure;
     isActive: boolean;
 }
