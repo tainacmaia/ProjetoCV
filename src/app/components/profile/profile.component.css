@@ -17,6 +17,12 @@
 
 /* accordion */
 
+.accordion {
+  --bs-accordion-transition: none;
+  --bs-accordion-border-color: none;
+}
+
+
 .accordion-button {
   padding: .3rem;
   border: none;

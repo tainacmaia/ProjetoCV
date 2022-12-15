@@ -44,21 +44,29 @@ main {
 
 .change-theme-button {
   transform: scale(1.1);
+  padding: 1rem;
   position: absolute;
   border-radius: 50%;
   top: 1rem;
   right: 4rem;
   height: 3rem;
   width: 3rem;
-  background-color: rgb(213, 177, 104);
-  background-image: url('../assets/lamp-day.png');
-
+  border-color: rgb(103, 87, 56);
+  background-color: var(  --bg-button-theme-submit);
+  background-image: url('../assets/moon.png');
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5seg;
 }
 
 .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
   color: var(--bs-btn-active-color);
-  background-color: rgb(60, 58, 75);
+  background-color: var(  --bg-button-theme-submit);
   border-color:  rgb(14, 12, 26);
-  background-image: url('../assets/lamp-night.png');
+  background-image: url('../assets/sun.png');
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 

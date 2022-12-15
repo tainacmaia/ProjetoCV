@@ -217,9 +217,9 @@
 .languages{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     height: 5rem;
     margin: 5%;
-    padding: 0 0 0 4rem;
 }
 
 

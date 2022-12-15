@@ -13,7 +13,7 @@ form {
     padding: 0.5rem;
     border: none;
     border-radius: 0.5rem;
-    background: #FAF3E7;
+    background: var(--bg-input-form);
 }
 
 .button-container {
@@ -23,9 +23,14 @@ form {
 }
 
 .buttonSubmit {
+    color: var(--txt-color);
+    display: flex;
     width: 8rem;
     height: 2rem;
     border: 1px solid #000;
     border-radius: 0.5rem;
-    background: #FECB68
+    background:  var(--bg-button-theme-submit);
+    padding: 1.5rem 2.5rem;
+    align-items: center;
+    justify-content: center;
 }
