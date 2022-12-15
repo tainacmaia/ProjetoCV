@@ -80,17 +80,17 @@
 	 top: 0.4em;
 }
  .pie-wrapper .label .smaller {
-	 color: #bdc3c7;
+	 /* color: #bdc3c7; */
 	 font-size: 0.45em;
 	 padding-bottom: 20px;
 	 vertical-align: super;
 }
  .pie-wrapper.style-2 .label {
 	 background: none;
-	 color: #7f8c8d;
+	 /* color: #7f8c8d; */
 }
  .pie-wrapper.style-2 .label .smaller {
-	 color: #bdc3c7;
+	 /* color: #bdc3c7; */
 }
  .pie-wrapper.progress-30 .pie .half-circle {
 	 border-color: #3498db;
@@ -209,7 +209,7 @@
 	 display: table;
 	 table-layout: fixed;
 	 width: 100%;
-	 color: #929292;
+	 /* color: #929292; */
 	 height: 4rem;
    width: 35rem;
 }
@@ -229,7 +229,7 @@
 	 display: table-cell;
 	 text-align: center;
 	 font-size: 0.875rem;
-	 color: #6d6875;
+	 /* color: #6d6875; */
 }
  .steps > .step:before {
 	 content: attr(data-step);
@@ -263,7 +263,7 @@
 	 display: none;
 }
  .steps > .step.is-complete {
-	 color: #6d6875;
+	 /* color: #6d6875; */
 }
  .steps > .step.is-complete:before {
 	 content: '\2713';
