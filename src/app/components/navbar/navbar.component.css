@@ -29,18 +29,17 @@ ul {
   font-size: 1.1rem;
 } */
 
-
 ul button {
- margin-right: 0.8rem;
+  margin-right: 0.8rem;
   list-style-type: none;
-  color: var(--txt-navButton);
-  background: var(--bg-navButton);
+  /* color: var(--txt-navButton); */
+  /* background: var(--bg-navButton); */
   padding: 1vh 4vw;
   border-radius: 1.5rem 1.5rem 0 0;
   border: none;
 }
 
-ul button:focus {
+ul button:focus, .btn-active{
   outline: 0;
   list-style-type: none;
   color: #fff;
@@ -51,3 +50,7 @@ ul button:focus {
   font-size: 1.1rem;
 }
 
+.btn-inactive{
+  color: var(--txt-navButton);
+  background: var(--bg-navButton);
+}
