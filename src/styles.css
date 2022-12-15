@@ -2,24 +2,20 @@
 :root{
   --bg-color: rgba(255, 252, 245, 1);
   --bg-card: rgba(202, 175, 154, 0.63);
-  --bg-navButton: #E3E3E3;
+  --bg-navButton: rgb(227, 227, 227);
+  --txt-navButton: rgb(111, 179, 184);
+  --bg-profile: rgb(246, 240, 230);
+  --txt-color: rgb(0, 0, 0);
+  --filter: brightness(0);
 }
 
 .dark-theme{
-  --bg-color: #242424;
+  --bg-color: rgb(36, 36, 36);
   --bg-card: rgb(174, 137, 107, 0.63);
-  --bg-navButton: #79BFCE;
-}
-
-main {
-  background: var(--bg-color);
-}
-
-ul button {
-  background: var(--bg-navButton);
-}
-
-.cardContainer, ul button:focus {
-  background: var(--bg-card);
+  --bg-navButton: rgb(121, 191, 206);
+  --txt-navButton: rgb(255, 255, 255);
+  --bg-profile: rgb(64, 60, 56);
+  --txt-color: rgb(255, 255, 255);
+  --filter: brightness(0) invert(1);
 }
 

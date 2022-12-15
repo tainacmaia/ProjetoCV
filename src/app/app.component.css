@@ -1,16 +1,17 @@
 @import "../styles.css";
 
 main {
-  /* --bg-color: rgba(255, 252, 245, 1); */
+  background: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  color: var(--txt-color);
 }
 
 .profile {
-  background: rgba(202, 175, 154, 0.17);
+  background: var(--bg-profile);
   padding: 0 1.5rem;
   height: 80vh;
   margin-right: 3rem;
