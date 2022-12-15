@@ -21,3 +21,43 @@ main {
   width: 70vw;
   height: 80vh;
 }
+
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg:  rgb(8, 10, 74);
+  --bs-btn-border-color:  rgb(8, 10, 74);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0a53be;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+}
+
+
+
+.change-theme-button {
+  transform: scale(1.1);
+  position: absolute;
+  border-radius: 50%;
+  top: 1rem;
+  right: 4rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: rgb(213, 177, 104);
+  background-image: url('../assets/lamp-day.png');
+
+}
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+  color: var(--bs-btn-active-color);
+  background-color: rgb(60, 58, 75);
+  border-color:  rgb(14, 12, 26);
+  background-image: url('../assets/lamp-night.png');
+}
+

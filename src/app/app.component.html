@@ -1,11 +1,12 @@
 <main (mousedown)="navButtonFocus($event)">
-  <button (click)="toggleDarkTheme()">Oi</button>
+  <button type="button" class="btn btn-primary change-theme-button" (click)="toggleDarkTheme()"
+    data-bs-toggle="button"></button>
+
   <section class="profile">
     <app-profile [dataProfile]="data.profileInfo"></app-profile>
   </section>
 
-    <section class="containerResume">
-      <app-resume [appData]="data"></app-resume>
-    </section>
+  <section class="containerResume">
+    <app-resume [appData]="data"></app-resume>
+  </section>
 </main>
-
