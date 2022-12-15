@@ -1,6 +1,6 @@
-import { TextStructure } from "./text-structure.model";
+import { ArrayTextStructure } from "./array-text-structure.model";
 
 export interface AchievementData {
-    value: TextStructure;
+    array: ArrayTextStructure[];
     isActive: boolean;
 }

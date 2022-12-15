@@ -1,2 +1,4 @@
-<h3>{{educationData.value.title}}</h3>
-<p>{{educationData.value.content}}</p>
+<div class="education" *ngFor="let education of educationData.array">
+    <h3>{{education.value.title}}</h3>
+    <p>{{education.value.content}}</p>
+</div>

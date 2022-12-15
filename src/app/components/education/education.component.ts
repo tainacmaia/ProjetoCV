@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent {
-@Input() public educationData!: EducationData;
+  @Input() public educationData!: EducationData;
 }
