@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --bg-color: rgba(255, 252, 245, 1);
+  --bg-card: rgba(202, 175, 154, 0.63);
+  --bg-navButton: #E3E3E3;
+}
+
+.dark-theme{
+  --bg-color: #242424;
+  --bg-card: rgb(174, 137, 107, 0.63);
+  --bg-navButton: #79BFCE;
+}
+
+main {
+  background: var(--bg-color);
+}
+
+ul button {
+  background: var(--bg-navButton);
+}
+
+.cardContainer, ul button:focus {
+  background: var(--bg-card);
+}
+
