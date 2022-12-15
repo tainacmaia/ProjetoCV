@@ -7,8 +7,31 @@ ul {
   margin: 0;
 }
 
-ul button {
+/* .navButton{
   margin-right: 0.8rem;
+  list-style-type: none;
+  color: var(--txt-navButton);
+  background: var(--bg-navButton);
+  padding: 1vh 4vw;
+  border-radius: 1.5rem 1.5rem 0 0;
+  border: none;
+}
+
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+  outline: 0;
+  list-style-type: none;
+  color: #fff;
+  background: var(--bg-card);
+  padding: 1vh 4vw;
+  border-radius: 1.4rem 1.5rem 0 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+} */
+
+
+ul button {
+ margin-right: 0.8rem;
   list-style-type: none;
   color: var(--txt-navButton);
   background: var(--bg-navButton);

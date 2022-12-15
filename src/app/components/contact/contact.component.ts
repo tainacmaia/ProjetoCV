@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactFormData } from './../../models/contact-form-data.model';
 
 @Component({
@@ -20,10 +20,10 @@ export class ContactComponent implements OnInit {
 
   private buildForm(): void {
     this.formContact = new FormGroup({
-      name: new FormControl(),
-      email: new FormControl(),
-      phone: new FormControl(),
-      message: new FormControl("Desejo conversar com você para negócios")
+      name: new FormControl("", [Validators.required]),
+      email: new FormControl("", [Validators.required, Validators.email]),
+      phone: new FormControl("", [Validators.required]),
+      message: new FormControl("Desejo conversar com você para negócios",)
     })
   };
 

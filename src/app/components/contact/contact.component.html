@@ -6,7 +6,9 @@
         class="form-input"
         formControlName="name"
         placeholder="Digite seu Nome"
+        [ngClass]="{ 'is-invalid': formContact.controls['name'].errors && formContact.controls['name'].touched}"
     >
+    <span *ngIf="formContact.controls['name'].errors && formContact.controls['name'].touched" class="invalid-feedback">Campo Inválidos</span>
   </div>
 
   <div class="formElement">
@@ -16,7 +18,9 @@
         class="form-input"
         formControlName="email"
         placeholder="teste@dominio.com"
+        [ngClass]="{ 'is-invalid': formContact.controls['email'].errors && formContact.controls['email'].touched}"
     >
+    <span *ngIf="formContact.controls['email'].errors && formContact.controls['email'].touched" class="invalid-feedback">Campo Inválidos</span>
   </div>
 
   <div class="formElement">
@@ -26,7 +30,9 @@
         class="form-input"
         formControlName="phone"
         placeholder="(00) 0000-0000"
+        [ngClass]="{ 'is-invalid': formContact.controls['phone'].errors && formContact.controls['phone'].touched}"
     >
+    <span *ngIf="formContact.controls['phone'].errors && formContact.controls['phone'].touched" class="invalid-feedback">Campo Inválidos</span>
   </div>
 
   <div class="formElement">
