@@ -12,6 +12,7 @@
   --bg-button-theme-submit: rgb(213, 177, 104);
   --txt-navButton: rgb(111, 179, 184);
   --txt-color:rgb(52, 33, 19);
+  --txt-color-link: rgb(173, 104, 54);
   --filter: brightness(0);
 }
 
@@ -24,5 +25,6 @@
   --bg-button-theme-submit: rgb(60, 58, 75);
   --txt-navButton: rgb(255, 255, 255);
   --txt-color: rgb(255, 255, 255);
+  --txt-color-link: rgb(171, 168, 233);
   --filter: brightness(0) invert(1);
 }

@@ -48,11 +48,11 @@ main {
   position: absolute;
   border-radius: 50%;
   top: 1rem;
-  right: 4rem;
+  right: 1rem;
   height: 3rem;
   width: 3rem;
   border-color: rgb(103, 87, 56);
-  background-color: var(  --bg-button-theme-submit);
+  background-color: var(--bg-button-theme-submit);
   background-image: url('../assets/moon.png');
   background-size: 2rem;
   background-repeat: no-repeat;
