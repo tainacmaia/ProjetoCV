@@ -43,7 +43,7 @@ main {
 
 
 .change-theme-button {
-  transform: scale(1.1);
+  transform: scale(0.7);
   padding: 1rem;
   position: absolute;
   border-radius: 50%;

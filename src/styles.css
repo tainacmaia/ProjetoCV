@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 :root{
   --bg-color: rgba(255, 252, 245, 1);
   --bg-card: rgba(202, 175, 154, 0.63);
@@ -7,7 +11,7 @@
   --bg-input-form: #FAF3E7;
   --bg-button-theme-submit: rgb(213, 177, 104);
   --txt-navButton: rgb(111, 179, 184);
-  --txt-color: rgb(0, 0, 0);
+  --txt-color:rgb(52, 33, 19);
   --filter: brightness(0);
 }
 
@@ -22,4 +26,3 @@
   --txt-color: rgb(255, 255, 255);
   --filter: brightness(0) invert(1);
 }
-
