@@ -16,7 +16,9 @@ export class AppComponent implements OnInit {
       name: "Wandinha Addams",
       About: {
         title: "Sobre mim",
-        text: ["Eu sou lindo(a) e esperto(a)"]
+        text: [`“A criança da quarta-feira é cheia de desgosto.”
+Escritora e violinista, para desanuviar a mente. Investigadora e vidente nas horas vagas, para agitar as coisas.
+Adoro animais exóticos, tipo escorpiões e aranhas. Preto, além de ser minha cor favorita é uma tonalidade sublime.`]
       },
       Contact: {
         title: "Contato",
