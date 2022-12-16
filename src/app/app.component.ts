@@ -1,4 +1,3 @@
-import { Languages } from './models/languages-data.model';
 import { AppData } from './models/app-data.model';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Levels } from './constants/language-level.enum';
@@ -26,7 +25,7 @@ Adoro animais exóticos, tipo escorpiões e aranhas. Preto, além de ser minha c
       },
       Portfolio: {
         title: "Portfólio",
-        text: ["https://github.com/tainacmaia"]
+        text: ["https://github.com"]
       }
     },
     nav: {
@@ -165,9 +164,4 @@ Adoro animais exóticos, tipo escorpiões e aranhas. Preto, além de ser minha c
   }
 
   @ViewChild('languages') languages!: ElementRef<HTMLElement>;
-  // public showLanguages(): void{
-  //   console.log(this.languages)
-  //   const section = document.getElementsByClassName('languagesList')
-
-  // }
 }
