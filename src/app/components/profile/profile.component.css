@@ -1,7 +1,7 @@
 @import "../../../styles.css";
 
 .profile-owner img {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   width: 250px;
   height: 300px;
   object-fit: cover;
@@ -10,9 +10,11 @@
 }
 
 .profile-owner h1 {
+  font-weight: 700;
   font-size: 1.6rem;
   text-align: center;
   color: var(--txt-color);
+  margin-bottom: 1rem;
 }
 
 /* accordion */
@@ -57,10 +59,12 @@
 .accordion-button::after
 {
   background-image: url(../../../assets/more2.png);
+  background-size: 50%;
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: url(../../../assets/less.png);
+  background-size: 50%;
   transform: scale(1.2, 1.2) rotate(.5turn);
 }
 

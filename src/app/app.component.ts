@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   public data: AppData = {
     profileInfo: {
       img: "../assets/profile-picture.jpeg",
-      name: "Wandinha",
+      name: "Wandinha Addams",
       About: {
         title: "Sobre mim",
         text: "Eu sou lindo(a) e esperto(a)"
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
       },
       Portfolio: {
         title: "Portfólio",
-        text: "Aqui ta os treco que eu fiz"
+        text: "https://github.com/tainacmaia"
       }
     },
     nav: {
