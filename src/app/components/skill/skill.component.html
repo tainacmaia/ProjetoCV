@@ -15,25 +15,27 @@
 </section>
 
 
-<section id="languages">
+<section class="languagesList" id="languages">
     <h3>Idiomas</h3>
     <div class="languages" *ngFor="let language of skillData.language">
         <h4>{{language.languageName}}</h4>
         <div class="languages-levels">
-          <ol class="steps">
-              <li class="step {{language.level1.level}}" data-step="1">
-                  {{language.level1.nameLevel}}
+          <ng-container [ngSwitch]="language.level">
+            <ol class="steps">
+              <li class="step" data-step="1">
+                <strong *ngSwitchCase="levelsEnum.Basico">Básico</strong>
               </li>
-              <li class="step {{language.level2.level}}" data-step="2">
-                  {{language.level2.nameLevel}}
+              <li class="step" data-step="2">
+                <strong *ngSwitchCase="levelsEnum.Intermediario">Intermediário</strong>
               </li>
-              <li class="step {{language.level3.level}}" data-step="3">
-                  {{language.level3.nameLevel}}
+              <li class="step" data-step="3">
+                <strong *ngSwitchCase="levelsEnum.Avancado">Avançado</strong>
               </li>
-              <li class="step {{language.level4.level}}" data-step="4">
-                  {{language.level4.nameLevel}}
+              <li class="step" data-step="4">
+                <strong *ngSwitchCase="levelsEnum.Fluente">Fluente</strong>
               </li>
-          </ol>
+            </ol>
+          </ng-container>
         </div>
     </div>
 
