@@ -69,7 +69,7 @@
    font-weight: bold;
 	 border-radius: 50%;
 	 bottom: 0.4em;
-	 color: #ecf0f1;
+	 color: var(--txt-color);
 	 cursor: default;
 	 font-size: 0.15em;
 	 left: 0.4em;
