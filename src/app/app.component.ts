@@ -37,23 +37,23 @@ export class AppComponent {
         technologies: [
           {
             classe: 'progress-45',
-            image: "../assets/more2.png",
-            name: "lindo"
+            image: "../assets/css3.logo.png",
+            name: "CSS 3"
           },
           {
             classe: 'progress-75',
-            image: "../assets/less.png",
-            name: "esperto"
+            image: "../assets/dotnet.logo.png",
+            name: "C#"
           },
           {
             classe: 'progress-90',
-            image: "../assets/less.png",
-            name: "gato"
+            image: "../assets/java.logo.png",
+            name: "Java"
           },
           {
             classe: 'progress-95',
-            image: "../assets/less.png",
-            name: "foda"
+            image: "../assets/angular.logo.png",
+            name: "Angular"
           },
         ],
         language: [
