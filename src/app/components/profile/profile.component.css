@@ -22,6 +22,8 @@
 .accordion {
   --bs-accordion-transition: none;
   --bs-accordion-border-color: none;
+  --bs-accordion-btn-bg: var(--bg-profile);
+  --bs-accordion-bg: var(--bg-profile);
 }
 
 
@@ -31,10 +33,19 @@
 }
 
 .accordion-body {
-  padding: .3rem;
+  padding: .1rem 0.3rem;
   background: var(--bg-profile);
   border: none;
   color: var(--txt-color);
+}
+
+.accordion-body a {
+  text-decoration: none;
+  color: var(--txt-color)
+}
+
+.accordion-body a:hover {
+  color: var(--txt-color-link)
 }
 
 .accordion-item h2 button {
@@ -59,13 +70,14 @@
 .accordion-button::after
 {
   background-image: url(../../../assets/more2.png);
-  background-size: 50%;
+  /* background-size: 50%; */
+  transform: scale(.6);
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: url(../../../assets/less.png);
-  background-size: 50%;
-  transform: scale(1.2, 1.2) rotate(.5turn);
+  /* background-size: 50%; */
+  transform: scale(.8) rotate(.5turn);
 }
 
 button.accordion-button::after{
