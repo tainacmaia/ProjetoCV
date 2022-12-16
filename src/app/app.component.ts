@@ -16,15 +16,15 @@ export class AppComponent implements OnInit {
       name: "Wandinha Addams",
       About: {
         title: "Sobre mim",
-        text: "Eu sou lindo(a) e esperto(a)"
+        text: ["Eu sou lindo(a) e esperto(a)"]
       },
       Contact: {
         title: "Contato",
-        text: "4002-8922"
+        text: ["Telefone:", "4002-8922", "E-mail:", "wandinha.addams@email.com"]
       },
       Portfolio: {
         title: "Portfólio",
-        text: "https://github.com/tainacmaia"
+        text: ["https://github.com/tainacmaia"]
       }
     },
     nav: {
