@@ -14,16 +14,15 @@ export class ContactComponent implements OnInit {
     this.buildForm()
   }
 
-  public btnDisabled = false;
   public formData!: ContactFormData;
   public formContact!: FormGroup;
 
   private buildForm(): void {
     this.formContact = new FormGroup({
-      name: new FormControl("", [Validators.required]),
+      name: new FormControl("", [Validators.required, Validators.minLength(8)]),
       email: new FormControl("", [Validators.required, Validators.email]),
-      phone: new FormControl("", [Validators.required]),
-      message: new FormControl("Desejo conversar com você para negócios",)
+      phone: new FormControl("", [Validators.required, Validators.minLength(10), Validators.maxLength(11)]),
+      message: new FormControl("", [Validators.required])
     })
   };
 
@@ -31,6 +30,7 @@ export class ContactComponent implements OnInit {
     // this.sendForm.emit(this.formContact)
     this.formData = this.formContact.getRawValue()
     console.log(this.formData)
+    alert('Formulário enviado com sucesso')
     this.formContact.reset();
   };
 }

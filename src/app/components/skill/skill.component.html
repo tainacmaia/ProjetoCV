@@ -3,7 +3,7 @@
     <div class="containerSkills">
       <div class="set-size charts-container" *ngFor="let skill of skillData.technologies">
           <div class="pie-wrapper style-2 {{skill.classe}}">
-              <span class="label">{{skill.name}}<span class="smaller"></span></span>
+              <span class="label">{{skill.name}}</span><img class="img-language" src="{{skill.image}}"><span class="smaller"></span>
               <div class="pie">
                   <div class="left-side half-circle"></div>
                   <div class="right-side half-circle"></div>

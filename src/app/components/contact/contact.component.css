@@ -34,3 +34,15 @@ form {
     align-items: center;
     justify-content: center;
 }
+
+.buttonSubmit:disabled{
+  filter: brightness(1.4);
+}
+
+.is-invalid {
+  border: 2px solid red;
+}
+
+.is-valid {
+  border: 2px solid green;
+}
