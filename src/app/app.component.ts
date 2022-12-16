@@ -73,20 +73,20 @@ export class AppComponent implements OnInit {
         array: [
           {
             value: {
-              title: "Experience",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Funerária Santa Luzia | dez 2018 - maio 2019",
+              content: "Responsável pelos cuidados do corpo pós-falecimento a fim de conservar, embalsamar, higienizar, restaurar e cuidar da aparência de modo a prepará-lo para o velório, funeral ou cerimônia fúnebre de acordo com os devidos preceitos religiosos e legais.n"
             },
           },
           {
             value: {
-              title: "Experience",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Instituto Médico Legal de São Paulo | jan 2020 - jun 2021",
+              content: "Técnica em necropsia - Responsável por identificar cadáveres, participar ativamente da dissecação do corpo, catalogar e examinar órgãos, realizar os procedimentos de esterilização do ambiente bem como dos instrumentos utilizados na autópsia."
             },
           },
           {
             value: {
-              title: "Experience",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Vidente autônoma | jul 2021 - atual",
+              content: "Atualmente opero no ramo do paranormal como vidente auxiliada por meus antepassados a fim de ajudar questões pessoais minhas ou de clientes, emito nota fiscal."
             },
           }
         ],
@@ -97,20 +97,26 @@ export class AppComponent implements OnInit {
         array: [
           {
             value: {
-              title: "Education",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Escola 9: Nevermore | 2022 - atual",
+              content: "Escola onde meus pais estudaram e, contra todas as expectativas, fiz amigos."
             },
           },
           {
             value: {
-              title: "Education",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Escola 8: Nancy Reagan High | 2022 - 2022 (expulsão)",
+              content: "Escola de playboyzinhos mimados, se você precisar treinar com alvos vivos, recomendo."
             },
           },
           {
             value: {
-              title: "Education",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Escolas 1, 2, 3, 4, 5, 6, 7 | 2017 a 2022 (expulsão)",
+              content: "Irrelevantes."
+            },
+          },
+          {
+            value: {
+              title: "Curso de abertura de cadáveres | 2021",
+              content: "Um dos melhores presentes de aniversário que eu poderia querer."
             },
           }
         ],
@@ -121,20 +127,20 @@ export class AppComponent implements OnInit {
         array: [
           {
             value: {
-              title: "Achievements",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Ferir gravemente alunos do ensino médio em Nancy Reagan High",
+              content: "Método: Piranhas. Como método punitivo à aluno que torturou Feioso (seu irmão), piranhas foram jogadas na piscina do colégio onde o culpado e seus amigos praticavam esportes."
             },
           },
           {
             value: {
-              title: "Achievements",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Provar a inocência de um acusado de homicídio (assassino)",
+              content: "Método: Investigação. A fim de inocentar Gomez Addams, inicia-se uma investigação ao passado e dessa maneira é descoberta um estratagema de envenenamento em massa aos excluídos da escola Nevermore pela suposta vítima, que coincidentemente, em um embate com o acusado acaba por quebrar um frasco de Belladonna e se auto envenenar."
             },
           },
           {
             value: {
-              title: "Achievements",
-              content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              title: "Torneio de Canoagem",
+              content: "Método: Emboscadas e conhecimento do oponente. Após conhecer seus oponentes em competições onde “vale tudo”, é importante estar a frente e se preparar para possíveis emboscadas preparadas para te atingir e assim formar uma frente de defesa. Simultaneamente preparar sua estratégia de ataque."
             },
           }
         ],
