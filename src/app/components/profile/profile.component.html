@@ -21,7 +21,7 @@
       </button>
     </h2>
     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">{{dataProfile.Contact.text}}</div>
+      <div class="accordion-body" *ngFor="let text of dataProfile.Contact.text">{{text}}</div>
     </div>
   </div>
   <div class="accordion-item">
