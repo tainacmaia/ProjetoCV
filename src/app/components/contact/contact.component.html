@@ -1,4 +1,4 @@
-<form [formGroup]="formContact" class="formContact">
+<form [formGroup]="formContact" class="formContact" (ngSubmit)="submitForm()">
   <div class="formElement">
     <label for="exampleFormControlInput1">Nome</label>
     <input
@@ -6,9 +6,9 @@
         class="form-input"
         formControlName="name"
         placeholder="Digite seu Nome"
-        [ngClass]="{ 'is-invalid': formContact.controls['name'].errors && formContact.controls['name'].touched}"
+        [ngClass]="{ 'is-invalid': formContact.controls['name'].errors && formContact.controls['name'].touched,  'is-valid': !formContact.controls['name'].errors}"
     >
-    <span *ngIf="formContact.controls['name'].errors && formContact.controls['name'].touched" class="invalid-feedback">Campo Inválidos</span>
+    <span *ngIf="formContact.controls['name'].errors && formContact.controls['name'].touched" class="invalid-feedback">Nome inválido</span>
   </div>
 
   <div class="formElement">
@@ -18,9 +18,9 @@
         class="form-input"
         formControlName="email"
         placeholder="teste@dominio.com"
-        [ngClass]="{ 'is-invalid': formContact.controls['email'].errors && formContact.controls['email'].touched}"
+        [ngClass]="{ 'is-invalid': formContact.controls['email'].errors && formContact.controls['email'].touched, 'is-valid': !formContact.controls['email'].errors}"
     >
-    <span *ngIf="formContact.controls['email'].errors && formContact.controls['email'].touched" class="invalid-feedback">Campo Inválidos</span>
+    <span *ngIf="formContact.controls['email'].errors && formContact.controls['email'].touched" class="invalid-feedback">Email Inválido</span>
   </div>
 
   <div class="formElement">
@@ -30,9 +30,10 @@
         class="form-input"
         formControlName="phone"
         placeholder="(00) 0000-0000"
-        [ngClass]="{ 'is-invalid': formContact.controls['phone'].errors && formContact.controls['phone'].touched}"
+        mask="(00) 000000009"
+        [ngClass]="{ 'is-invalid': formContact.controls['phone'].errors && formContact.controls['phone'].touched ,  'is-valid': !formContact.controls['phone'].errors}"
     >
-    <span *ngIf="formContact.controls['phone'].errors && formContact.controls['phone'].touched" class="invalid-feedback">Campo Inválidos</span>
+    <span *ngIf="formContact.controls['phone'].errors && formContact.controls['phone'].touched" class="invalid-feedback">Telefone Inválido</span>
   </div>
 
   <div class="formElement">
@@ -43,14 +44,15 @@
         class="form-input"
         formControlName="message"
         placeholder="Escreva aqui sua mensagem"
+        [ngClass]="{ 'is-invalid': formContact.controls['message'].errors && formContact.controls['message'].touched ,  'is-valid': !formContact.controls['message'].errors}"
     ></textarea>
+    <span *ngIf="formContact.controls['message'].errors && formContact.controls['message'].touched" class="invalid-feedback">Escreva uma mensagem para que saibamos mais sobre você</span>
   </div>
 
   <div class="button-container">
     <button
       class="buttonSubmit"
-      [disabled]="btnDisabled"
-      (click)="submitForm()"
+      [disabled]="!formContact.valid"
     >Enviar</button>
   </div>
 </form>
