@@ -20,15 +20,16 @@ form {
 .button-container {
     padding: 1rem;
     display: flex;
-    justify-content: center;
-}
+    justify-content: flex-end;
+    margin-right: 13px;
+  }
 
 .buttonSubmit {
     color: var(--txt-color);
     display: flex;
     width: 8rem;
     height: 2rem;
-    border: 1px solid #000;
+    border: none;
     border-radius: 0.5rem;
     background:  var(--bg-button-theme-submit);
     padding: 1.5rem 2.5rem;
@@ -42,8 +43,19 @@ form {
 
 .is-invalid {
   border: 2px solid red;
+  border-radius: 10px 10px 10px 0;
+}
+
+.invalid-feedback {
+  color: rgb(241, 218, 218);
+  background-color: red;
+  border-radius: 0  0 10px 10px;
+  margin-top: 0;
+  padding: 5px 20px;
+  width: fit-content;
+  font-size: 12px;
 }
 
 .is-valid {
-  border: 2px solid green;
+  border: 3px solid green;
 }
