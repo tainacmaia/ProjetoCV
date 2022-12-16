@@ -1,13 +1,14 @@
 import { Languages } from './models/languages-data.model';
 import { AppData } from './models/app-data.model';
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Levels } from './constants/language-level.enum';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   public data: AppData = {
     profileInfo: {
@@ -59,43 +60,12 @@ export class AppComponent {
         language: [
           {
             languageName: "Inglês",
-            level1: {
-              level: "is-complete",
-              nameLevel: "Iniciante",
-            },
-            level2: {
-              level: "is-complete",
-              nameLevel: "Intermediário",
-            },
-            level3: {
-              level: "is-active",
-              nameLevel: "Avançado",
-            },
-            level4: {
-              level: "",
-              nameLevel: "Fluente",
-            },
+            level: Levels.Basico
           },
           {
             languageName: "Árabe",
-            level1: {
-              level: "is-complete",
-              nameLevel: "Iniciante",
-            },
-            level2: {
-              level: "is-complete",
-              nameLevel: "Intermediário",
-            },
-            level3: {
-              level: "is-complete",
-              nameLevel: "Avançado",
-            },
-            level4: {
-              level: "is-active",
-              nameLevel: "Fluente",
-            },
+            level: Levels.Avancado
           },
-
         ],
         isActive: true,
       },
@@ -176,15 +146,20 @@ export class AppComponent {
     }
   }
 
-  // public navButtonFocus(e: any) {
-  //   if(e.target.className != 'navButton')
-  //   {
-  //     e.preventDefault();
-  //   }
-  // }
+  ngOnInit(): void {
+    // console.log(document.getElementsByClassName('languagesList'))
+    // this.showLanguages()
+  }
 
   public toggleDarkTheme(): void {
     const main = document.getElementsByTagName("main")[0];
     main.classList.toggle('dark-theme');
   }
+
+  @ViewChild('languages') languages!: ElementRef<HTMLElement>;
+  // public showLanguages(): void{
+  //   console.log(this.languages)
+  //   const section = document.getElementsByClassName('languagesList')
+
+  // }
 }
