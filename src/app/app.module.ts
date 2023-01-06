@@ -13,6 +13,9 @@ import { SkillComponent } from './components/skill/skill.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './components/contact/contact.component';
 import { NgxMaskModule } from 'ngx-mask';
+import { AppRoutingModule } from './app-routing.moule';
+import { NotFoundComponent } from './components/not-found/not-found.component'
+
 
 @NgModule({
   declarations: [
@@ -26,8 +29,10 @@ import { NgxMaskModule } from 'ngx-mask';
     NavbarComponent,
     SkillComponent,
     ContactComponent,
+    NotFoundComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
